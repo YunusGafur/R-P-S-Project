@@ -10,20 +10,59 @@
 <body>
     
     <div class="container text-center mt-5">
+        <div class="Instruction mb-4">
+            <h2>How to Play</h2>
+            <p>Choose Rock, Paper, or Scissors to play against the computer. The rules are simple:</p>
+            <ul>
+                <li>Rock beats Scissors</li>
+                <li>Scissors beats Paper</li>
+                <li>Paper beats Rock</li>
+            </ul>
+            <p>Click "Reset Game" to start over at any time. Good luck!</p>
+        </div>
+        <div class="image">
         <img src="images/70-705936_legend-of-rock-paper-scissors-battle-hd-png-removebg-preview.png" alt="descriptive text">
+        </div>
         <h1 class="mb-4">Rock-Paper-Scissors</h1>
         <div class="choices" class="mb-4">
 <button class="btn-96"><span>Rock</span></button>
 <button class="btn-97"><span>Paper</span></button>
 <button class="btn-98"><span>Scissors</span></button>
         </div>
+        <button class="btn-99"><span>Reset Game</span></button>
         <div id="result" class="mb-4"></div>
         <div id="scoreboard">
             <p>Player Score: <span id="player-score">0</span></p>
+            <p>Result: Unknown</p>
             <p>Computer Score: <span id="computer-score">0</span></p>
         </div>
          <div id="result">Make your move!</div>
 </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="instructionsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="instructionsModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="instructionsModalLabel">How to Play <strong>Rock</strong>, <strong>Paper</strong>, <strong>Scissors</strong></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Instructions are on top, have fun!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var instructionsModal = new bootstrap.Modal(document.getElementById('instructionsModal'));
+            instructionsModal.show();
+        });
+    </script>
 
 
     <script src="java.js"></script>

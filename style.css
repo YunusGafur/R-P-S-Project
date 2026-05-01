@@ -17,6 +17,16 @@ body {
     width: 90%;
 }
 
+/* From Uiverse.io */
+.Instructions {
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+}
+
 .choices {
     display: flex;
     justify-content: center;
@@ -71,9 +81,11 @@ body {
     margin: 0 5px;
 }
 
-.btn-96 { background-color: #6c757d; }
-.btn-97 { background-color: #0d6efd; } 
-.btn-98 { background-color: #dc3545; } 
+.btn-97 { color: #000; }
+.btn-96 { background-color: #90a7bb; }
+.btn-97 { background-color: #e9e6c8; } 
+.btn-98 { background-color: #81cc84; }
+.btn-99 { background-color: #e04756; } 
 
 [class^="btn-9"]:hover {
     transform: translateY(-4px);
