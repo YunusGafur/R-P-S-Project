@@ -17,6 +17,11 @@ body {
     width: 90%;
 }
 
+image1 {
+    max-width: 100%;
+    height: auto;
+}
+
 /* From Uiverse.io */
 .Instructions {
   width: 190px;
