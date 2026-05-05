@@ -193,11 +193,8 @@ body {
     filter: blur(1px) drop-shadow(0 0 10px rgba(255,255,255,0.3));
 }
 
-/* ========================= */
-/* INDIVIDUAL ANIMATIONS */
-/* ========================= */
 
-/* ROCK (heavy, aggressive movement) */
+/* ROCK */
 .rock {
     animation: rockFight 6s infinite linear;
 }
@@ -210,7 +207,7 @@ body {
     100% { transform: translate(-10%, 20%) rotate(480deg) scale(1); }
 }
 
-/* PAPER (fast, fluttery, chaotic) */
+/* PAPER */
 .paper {
     animation: paperFight 5s infinite ease-in-out;
 }
@@ -224,7 +221,7 @@ body {
     100% { transform: translate(90vw, -10%) rotate(900deg) scale(1); }
 }
 
-/* SCISSORS (sharp, fast strikes) */
+/* SCISSORS */
 .scissors {
     animation: scissorsFight 4s infinite linear;
 }
@@ -237,11 +234,10 @@ body {
     100% { transform: translate(50vw, 100vh) rotate(720deg) scale(1); }
 }
 
-/* ========================= */
 /* KEEP UI ABOVE BACKGROUND */
-/* ========================= */
 
 .main-card {
     position: relative;
     z-index: 2;
 }
+
